@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificate Verification</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #eeeeee;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+
+        .page {
+            width: 100%;
+            min-height: 100vh;
+            padding: 35px 15px;
+        }
+
+        .certificate-card {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 2px;
+            padding: 0 25px 35px;
+            box-shadow: 0 0 2px rgba(0,0,0,0.08);
+        }
+
+        /* Header */
+        .header {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: 400;
+            color: #536b83;
+            letter-spacing: -1px;
+        }
+
+        .logo-small {
+            display: block;
+            font-size: 8px;
+            color: #777;
+            margin-top: -2px;
+            letter-spacing: 0;
+        }
+
+        /* Verification Status */
+        .status {
+            margin-top: 15px;
+            margin-bottom: 14px;
+            background: #27ae50;
+            color: white;
+            padding: 11px 14px;
+            border-radius: 3px;
+            font-size: 13px;
+        }
+
+        /* Certificate Table */
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .details-table td {
+            border: 1px solid #e4e4e4;
+            padding: 12px 10px;
+            vertical-align: middle;
+            line-height: 1.35;
+        }
+
+        .details-table td:first-child {
+            width: 28%;
+            color: #333;
+        }
+
+        .details-table td:last-child {
+            color: #555;
+        }
+
+        .course {
+            font-weight: bold;
+            color: #333 !important;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            .page {
+                padding: 20px 10px;
+            }
+
+            .certificate-card {
+                padding: 0 15px 25px;
+            }
+
+            .header {
+                height: 58px;
+            }
+
+            .logo {
+                font-size: 23px;
+            }
+
+            .details-table {
+                font-size: 12px;
+            }
+
+            .details-table td {
+                padding: 10px 7px;
+            }
+
+            .details-table td:first-child {
+                width: 30%;
+            }
+
+            .status {
+                font-size: 12px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="certificate-card">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                edunet
+                <span class="logo-small">foundation</span>
+            </div>
+        </div>
+
+        <!-- Status -->
+        <div class="status">
+            Certificate Verified
+        </div>
+
+        <!-- Certificate Details -->
+        <table class="details-table">
+
+            <tr>
+                <td>Name</td>
+                <td>Abhishek Pratap Singh</td>
+            </tr>
+
+            <tr>
+                <td>AICTE ID</td>
+                <td>STU6125036d005a81629815661</td>
+            </tr>
+
+            <tr>
+                <td>College Name</td>
+                <td>Swami Vivekananda Subharti University</td>
+            </tr>
+
+            <tr>
+                <td>Courses completed</td>
+                <td class="course">
+                    Artificial Intelligence & Machine Learning
+                </td>
+            </tr>
+
+            <tr>
+                <td>Project Name</td>
+                <td>"AI-Powered Enterprise Knowledge Assistant using Generative AI"</td>
+            </tr>
+
+            <tr>
+                <td>Start Date</td>
+                <td>15 January 2026</td>
+            </tr>
+
+            <tr>
+                <td>End Date</td>
+                <td>26 FEBRUARY 2026</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>
